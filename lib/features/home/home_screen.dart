@@ -3,7 +3,7 @@ import 'package:flutter/material.dart';
 import 'package:flutter/services.dart'; // For rootBundle
 import 'package:flutter_riverpod/flutter_riverpod.dart';
 import 'package:gap/gap.dart';
-import 'package:ghall/core/providers/platforms_provider.dart';
+import 'package:bhejo/core/providers/platforms_provider.dart';
 import 'package:tray_manager/tray_manager.dart';
 import 'package:window_manager/window_manager.dart';
 import 'package:file_picker/file_picker.dart';
@@ -79,7 +79,7 @@ class _HomeScreenState extends ConsumerState<HomeScreen> with TrayListener, Wind
       try {
         final byteData = await rootBundle.load('assets/icon.png');
         final tempDir = await getTemporaryDirectory();
-        final file = File('${tempDir.path}/ghall_tray_icon.png');
+        final file = File('${tempDir.path}/bhejo_tray_icon.png');
         await file.writeAsBytes(byteData.buffer.asUint8List());
         iconPath = file.path;
       } catch (e) {
@@ -88,14 +88,14 @@ class _HomeScreenState extends ConsumerState<HomeScreen> with TrayListener, Wind
     }
 
     // await trayManager.setIcon(iconPath);
-    // await trayManager.setToolTip('Ghall');
+    // await trayManager.setToolTip('Bhejo');
     
     // Simplified menu without separator to test stability
     /* Menu menu = Menu(
       items: [
         MenuItem(
           key: 'show_window',
-          label: 'Show Ghall',
+          label: 'Show Bhejo',
         ),
         MenuItem(
           key: 'exit_app',
@@ -280,7 +280,7 @@ class _HomeScreenState extends ConsumerState<HomeScreen> with TrayListener, Wind
             child: Icon(Icons.share, color: Colors.white, size: 20),
           ),
         ),
-        title: const Text('Ghall'),
+        title: const Text('Bhejo'),
         actions: [
           IconButton(
             icon: const Icon(Icons.manage_accounts),

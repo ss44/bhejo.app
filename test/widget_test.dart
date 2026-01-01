@@ -8,12 +8,12 @@
 import 'package:flutter_riverpod/flutter_riverpod.dart';
 import 'package:flutter_test/flutter_test.dart';
 
-import 'package:ghall/main.dart';
+import 'package:bhejo/main.dart';
 
 void main() {
   testWidgets('App builds smoke test', (WidgetTester tester) async {
     // Build our app and trigger a frame.
-    await tester.pumpWidget(const ProviderScope(child: GhallApp()));
+    await tester.pumpWidget(const ProviderScope(child: BhejoApp()));
   });
 }
 

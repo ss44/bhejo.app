@@ -25,7 +25,7 @@ void main() async {
     await windowManager.hide();
   });
 
-  runApp(const ProviderScope(child: GhallApp()));
+  runApp(const ProviderScope(child: BhejoApp()));
 }
 
 // Simple router setup
@@ -42,13 +42,13 @@ final _router = GoRouter(
   ],
 );
 
-class GhallApp extends ConsumerWidget {
-  const GhallApp({super.key});
+class BhejoApp extends ConsumerWidget {
+  const BhejoApp({super.key});
 
   @override
   Widget build(BuildContext context, WidgetRef ref) {
     return MaterialApp.router(
-      title: 'Ghall',
+      title: 'Bhejo',
       theme: ThemeData(
         colorScheme: ColorScheme.fromSeed(seedColor: Colors.deepPurple),
         useMaterial3: true,

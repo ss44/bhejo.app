@@ -6,7 +6,7 @@ import 'package:bluesky/app_bsky_embed_video.dart';
 import 'package:bluesky/app_bsky_embed_external.dart';
 import 'package:bluesky/app_bsky_feed_post.dart';
 import 'package:atproto/atproto.dart' as atproto;
-import 'package:ghall/core/interfaces/social_platform.dart';
+import 'package:bhejo/core/interfaces/social_platform.dart';
 import 'package:flutter_secure_storage/flutter_secure_storage.dart';
 import 'package:image/image.dart' as img;
 
@@ -89,7 +89,7 @@ class BlueskyPlatform implements SocialPlatform {
             external: EmbedExternalExternal(
               uri: url,
               title: 'GIF from Giphy',
-              description: 'Shared via Ghall',
+              description: 'Shared via Bhejo',
               // thumb: blob, // We need to upload a thumb blob if we want an image
             ),
           ),

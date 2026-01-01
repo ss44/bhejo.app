@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
-import 'package:ghall/core/providers/platforms_provider.dart';
-import 'package:ghall/core/interfaces/social_platform.dart';
+import 'package:bhejo/core/providers/platforms_provider.dart';
+import 'package:bhejo/core/interfaces/social_platform.dart';
 import 'package:flutter_secure_storage/flutter_secure_storage.dart';
 
 class SettingsScreen extends ConsumerStatefulWidget {
