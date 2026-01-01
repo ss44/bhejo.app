@@ -1,6 +1,6 @@
-# Ghall
+# Bhejo
 
-**Ghall** (from the Punjabi word *ghall*, meaning "to send" or "to speak") is a lightweight social media cross-posting tool.
+**Bhejo** (from the Punjabi word *bhejo*, meaning "to send") is a lightweight social media cross-posting tool.
 
 ## Goal
 To provide a simple interface for quickly posting content to multiple social media platforms simultaneously.
