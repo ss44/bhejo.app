@@ -1,0 +1,73 @@
+name: ghall
+description: A lightweight social media cross-posting tool.
+publish_to: 'none'
+version: 0.1.0+1
+
+environment:
+  sdk: '>=3.2.0 <4.0.0'
+
+dependencies:
+  flutter:
+    sdk: flutter
+  
+  # State Management
+  flutter_riverpod: ^2.4.9
+  riverpod_annotation: ^2.3.3
+
+  # Navigation
+  go_router: ^13.0.0
+
+  # Storage (for API keys)
+  flutter_secure_storage: ^9.0.0
+  shared_preferences: ^2.2.2
+
+  # Networking
+  http: ^1.1.0
+
+  # UI Utilities
+  gap: ^3.0.0 # For easy spacing
+  
+  # Desktop Integration
+  tray_manager: ^0.2.0
+  window_manager: ^0.3.8
+  
+  # Media
+  file_picker: ^6.1.1
+  path_provider: ^2.1.5
+  bluesky: ^1.0.0
+  atproto: ^1.3.0
+  image: ^4.7.2
+  giphy_get: ^3.6.1+1
+  flutter_dotenv: ^6.0.0
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+  flutter_lints: ^3.0.0
+  build_runner: ^2.4.8
+  riverpod_generator: ^2.3.9
+  custom_lint: ^0.7.6
+  riverpod_lint: ^2.3.7
+  flutter_launcher_icons: ^0.13.1
+
+flutter_launcher_icons:
+  android: "launcher_icon"
+  ios: true
+  image_path: "assets/icon.png"
+  min_sdk_android: 21 # android min sdk min:16, default 21
+  web:
+    generate: true
+    image_path: "assets/icon.png"
+    background_color: "#hex_code"
+    theme_color: "#hex_code"
+  windows:
+    generate: true
+    icon_size: 48 # min:48, max:256, default: 48
+  macos:
+    generate: true
+    image_path: "assets/icon.png"
+
+flutter:
+  uses-material-design: true
+  assets:
+    - .env
